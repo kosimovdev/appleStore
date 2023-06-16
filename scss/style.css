@@ -1,0 +1,1477 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  width: 100%;
+}
+
+header .topNav {
+  height: 51px;
+  background-color: #f9f9f9;
+  padding: 10px 0;
+}
+
+header .topNav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .topNav .container .navBoxLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .topNav .container .navBoxLeft h4 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #100E0E;
+  margin-right: 8px;
+}
+
+header .topNav .container .navBoxLeft p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0071E4;
+  margin-right: 4px;
+}
+
+header .topNav .container .navBoxRight {
+  gap: 8px;
+}
+
+header .topNav .container .navBoxRight a {
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+header .centerNav {
+  padding: 23px 0 31px 0;
+}
+
+header .centerNav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .centerNav .container .centerNavBoxRight ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+header .centerNav .container .centerNavBoxRight ul li {
+  list-style: none;
+}
+
+header .centerNav .container .centerNavBoxRight ul li a {
+  text-decoration: none;
+}
+
+header .centerNav .container .centerNavBoxRight ul li a:hover {
+  color: #0071E4;
+  border-bottom: 2px solid #0071E4;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  padding-bottom: 3px;
+}
+
+header .centerNav .container .centerNavBoxRight ul li:nth-child(2) {
+  background: #fdefbf;
+  border-radius: 8px;
+  padding: 2px 8px 2px 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+}
+
+header .centerNav .container .centerNavBoxRight ul li:nth-child(9) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+}
+
+header .centerNav .container .singleItem {
+  width: 100%;
+}
+
+header .centerNav .container .singleItem a,
+header .centerNav .container .singleItem p {
+  text-align: right;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0071E4;
+  text-decoration: none;
+}
+
+header .searchNav {
+  padding: 22px 0;
+}
+
+header .searchNav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .searchNav .container .searchBoxLeft button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 16px;
+  background-color: #0071E4;
+  color: #FFFFFF;
+}
+
+header .searchNav .container .searchBoxCenter {
+  width: 594px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 16px 24px;
+  gap: 8px;
+  border: 1px solid #b7b7b7;
+  border-radius: 8px;
+}
+
+header .searchNav .container .searchBoxCenter input {
+  width: 100%;
+  height: 40px;
+  border: none;
+}
+
+header .searchNav .container .searchBoxCenter input:focus-visible {
+  outline: none;
+}
+
+header .searchNav .container .searchBoxRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+
+header .searchNav .container .searchBoxRight button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 31px;
+  background: #52d116;
+  border-radius: 16px;
+  border: none;
+  gap: 4px;
+  color: #FFFFFF;
+}
+
+header .searchNav .container .searchBoxRight button span {
+  font-size: 20px;
+  line-height: 24px;
+  padding: 4px 12px;
+  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+
+header .miniNav {
+  padding: 8px 0;
+}
+
+header .miniNav .container .miniNavbox ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .miniNav .container .miniNavbox ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+header .miniNav .container .miniNavbox ul li:hover img:nth-child(1) {
+  display: none;
+}
+
+header .miniNav .container .miniNavbox ul li:hover img:nth-child(2) {
+  display: block;
+}
+
+header .miniNav .container .miniNavbox ul li:hover a {
+  color: #0071E4;
+  border-bottom: 2px solid #0071E4;
+  padding-bottom: 2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+header .miniNav .container .miniNavbox ul li img {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+header .miniNav .container .miniNavbox ul li img:nth-child(2) {
+  display: none;
+}
+
+header .miniNav .container .miniNavbox ul li a {
+  text-decoration: none;
+  color: #100E0E;
+}
+
+header .miniNav .container .miniNavbox ul button {
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 16px;
+  margin-left: 25px;
+  border: none;
+  background-color: #52d116;
+  gap: 11px;
+  padding: 0 16px 0 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FFFFFF;
+  background: -webkit-gradient(linear, left top, right top, color-stop(22.19%, #000000), to(#5E556B));
+  background: linear-gradient(90deg, #000000 22.19%, #5E556B 100%);
+}
+
+header .miniNav .container .miniNavbox ul button img {
+  border-radius: 16px 0 0 10px;
+}
+
+#mainBlock {
+  width: 100%;
+  background: #d0eafc;
+}
+
+#mainBlock .container {
+  position: relative;
+}
+
+#mainBlock .container .boxOfController img {
+  position: absolute;
+  top: 50%;
+}
+
+#mainBlock .container .boxOfController img:nth-child(2) {
+  right: 20px;
+}
+
+#mainBlock .container .mainBlockBox {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#mainBlock .container .mainBlockBox .mainBoxLeft {
+  padding-left: 80px;
+}
+
+#mainBlock .container .mainBlockBox .mainBoxLeft img {
+  width: 398px;
+  height: 479px;
+}
+
+#mainBlock .container .mainBlockBox .mainBoxRight img {
+  width: 457px;
+  height: 106px;
+  margin-bottom: 18px;
+}
+
+#mainBlock .container .mainBlockBox .mainBoxRight h1 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57px;
+  color: #100E0E;
+  margin-bottom: 20px;
+}
+
+#mainBlock .container .mainBlockBox .mainBoxRight h1 span {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #100E0E;
+  margin-right: 16px;
+}
+
+#mainBlock .container .mainBlockBox .mainBoxRight button {
+  padding: 18.5px 39.5px;
+  border-radius: 8px;
+  background-color: #0071E4;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+#mainBlock .container .mainBlockBox .mainBoxRight button:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#mainShop {
+  padding: 24px 0 40px 0;
+}
+
+#mainShop .container h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 57px;
+  color: #100E0E;
+  text-align: center;
+  margin-bottom: 49px;
+}
+
+#mainShop .container p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0071E4;
+}
+
+#mainShop .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+#mainShop .container .row .col {
+  width: calc(25% - 12px);
+  padding: 16px 8px 24px 8px;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+#mainShop .container .row .col:nth-child(1) button {
+  background-color: #52d116;
+}
+
+#mainShop .container .row .col:nth-child(8) .flexTitle {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 5px;
+}
+
+#mainShop .container .row .col:nth-child(8) .flexTitle .rounded {
+  background-color: #0071E4;
+}
+
+#mainShop .container .row .col:nth-child(8) h6 {
+  margin-left: 22px;
+  margin-top: 9px;
+}
+
+#mainShop .container .row .col:nth-child(8) button {
+  padding: 17.5px 24px;
+  background-color: #FFFFFF;
+  border: 1px solid #0071e4;
+  border-radius: 8px;
+  color: #0071E4;
+}
+
+#mainShop .container .row .col .starBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+#mainShop .container .row .col .starBox p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0071E4;
+  margin-right: 27px;
+  margin-left: 8px;
+}
+
+#mainShop .container .row .col .starBox img {
+  width: 24px;
+  height: 24px;
+}
+
+#mainShop .container .row .col .starBox img:nth-child(8) {
+  margin-left: 8px;
+}
+
+#mainShop .container .row .col h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #100E0E;
+}
+
+#mainShop .container .row .col img {
+  width: 266px;
+  height: 288px;
+}
+
+#mainShop .container .row .col .flexTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 16px;
+}
+
+#mainShop .container .row .col .flexTitle .rounded {
+  width: 16px;
+  height: 16px;
+  background-color: #52d116;
+  border-radius: 50%;
+}
+
+#mainShop .container .row .col .flexTitle p {
+  font-size: 14px;
+  line-height: 19px;
+  color: #706e6e;
+}
+
+#mainShop .container .row .col h6 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #878787;
+}
+
+#mainShop .container .row .col h3 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  margin-top: 4px;
+}
+
+#mainShop .container .row .col h3 span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #878787;
+  margin-right: 13px;
+}
+
+#mainShop .container .row .col button {
+  padding: 16px 70px;
+  color: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #0071E4;
+  border-radius: 8px;
+  border: none;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+#mainShop .container .row .col button:hover {
+  opacity: 0.7;
+}
+
+#mainShop .container .row .col button img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+#mainShop .container .row .col .flexTitle p:nth-child(1) {
+  color: #0071E4;
+}
+
+#centerSection {
+  padding: 32px 0;
+}
+
+#centerSection .container .centerTopBox h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #100E0E;
+  margin-bottom: 22px;
+}
+
+#centerSection .container .centerTopBox h6 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #585656;
+  margin-bottom: 22px;
+}
+
+#centerSection .container .centerTopBox p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #585656;
+}
+
+#centerSection .centerSectionBox {
+  background-color: #000000;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+#centerSection .centerSectionBox .container .centerBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 88px;
+}
+
+#centerSection .centerSectionBox .container .centerBox .centerBoxRight {
+  color: #FFFFFF;
+}
+
+#centerSection .centerSectionBox .container .centerBox .centerBoxRight h2 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 67px;
+}
+
+#centerSection .centerSectionBox .container .centerBox .centerBoxRight p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+#centerSection .centerSectionBox .container .centerBox .centerBoxRight button {
+  padding: 18.5px 39.5px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  background-color: #0071E4;
+}
+
+#centerSection .centerSectionBox .container .centerBox .centerBoxRight button:hover {
+  opacity: 0.8;
+}
+
+#bottomShoppingSection {
+  padding: 32px 0;
+}
+
+#bottomShoppingSection .container h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 57px;
+  color: #100E0E;
+  text-align: center;
+  margin-bottom: 49px;
+}
+
+#bottomShoppingSection .container p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0071E4;
+}
+
+#bottomShoppingSection .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+#bottomShoppingSection .container .row .col {
+  width: calc(25% - 12px);
+  padding: 16px 8px 24px 8px;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+#bottomShoppingSection .container .row .col .starBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+#bottomShoppingSection .container .row .col .starBox p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0071E4;
+  margin-right: 27px;
+  margin-left: 8px;
+}
+
+#bottomShoppingSection .container .row .col .starBox img {
+  width: 24px;
+  height: 24px;
+}
+
+#bottomShoppingSection .container .row .col .starBox img:nth-child(8) {
+  margin-left: 8px;
+}
+
+#bottomShoppingSection .container .row .col h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #100E0E;
+}
+
+#bottomShoppingSection .container .row .col img {
+  width: 266px;
+  height: 288px;
+}
+
+#bottomShoppingSection .container .row .col .flexTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 16px;
+}
+
+#bottomShoppingSection .container .row .col .flexTitle .rounded {
+  width: 16px;
+  height: 16px;
+  background-color: #52d116;
+  border-radius: 50%;
+}
+
+#bottomShoppingSection .container .row .col .flexTitle p {
+  font-size: 14px;
+  line-height: 19px;
+  color: #706e6e;
+}
+
+#bottomShoppingSection .container .row .col h6 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #878787;
+}
+
+#bottomShoppingSection .container .row .col h3 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  margin-top: 4px;
+}
+
+#bottomShoppingSection .container .row .col h3 span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #878787;
+  margin-right: 13px;
+}
+
+#bottomShoppingSection .container .row .col button {
+  padding: 16px 70px;
+  color: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #0071E4;
+  border-radius: 8px;
+  border: none;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+#bottomShoppingSection .container .row .col button:hover {
+  opacity: 0.7;
+}
+
+#bottomShoppingSection .container .row .col button img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+#bottomShoppingSection .container .row .col .flexTitle p:nth-child(1) {
+  color: #0071E4;
+}
+
+#infoSection {
+  padding: 40px 0;
+}
+
+#infoSection .container h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #100E0E;
+  text-align: center;
+}
+
+#infoSection .container .infoBox .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 24px;
+}
+
+#infoSection .container .infoBox .row .col {
+  width: calc(20% - 7.5px);
+  height: 500px;
+  background: linear-gradient(180.04deg, #fe94a6 0.04%, #f2f2f2 65.84%);
+  border-radius: 16px;
+  padding: 24px 4px 32px 4px;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  position: relative;
+}
+
+#infoSection .container .infoBox .row .col:nth-child(2) {
+  background: linear-gradient(180.04deg, #E685FF 0.04%, #F2F2F2 65.84%);
+}
+
+#infoSection .container .infoBox .row .col:nth-child(2) .cardBox button:hover {
+  background: linear-gradient(180.04deg, #E685FF 0.04%, #F2F2F2 65.84%);
+}
+
+#infoSection .container .infoBox .row .col:nth-child(3) {
+  background: linear-gradient(180.04deg, #7DE9FF 0.04%, #F2F2F2 65.84%);
+}
+
+#infoSection .container .infoBox .row .col:nth-child(3) .cardBox button:hover {
+  background: linear-gradient(180.04deg, #7DE9FF 0.04%, #F2F2F2 65.84%);
+}
+
+#infoSection .container .infoBox .row .col:nth-child(4) {
+  background: linear-gradient(180.04deg, #FFE685 0.04%, #F7F7F7 65.84%);
+}
+
+#infoSection .container .infoBox .row .col:nth-child(4) .cardBox button:hover {
+  background: linear-gradient(180.04deg, #FFE685 0.04%, #F7F7F7 65.84%);
+}
+
+#infoSection .container .infoBox .row .col:nth-child(5) {
+  background: linear-gradient(180.04deg, #ADFFC1 0.04%, #F2F2F2 65.84%), #F2F2F2;
+}
+
+#infoSection .container .infoBox .row .col:nth-child(5) .cardBox button:hover {
+  background: linear-gradient(180.04deg, #ADFFC1 0.04%, #F2F2F2 65.84%), #F2F2F2;
+}
+
+#infoSection .container .infoBox .row .col img {
+  width: 160px;
+  height: 160px;
+  margin-left: 24px;
+}
+
+#infoSection .container .infoBox .row .col h2 {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 29px;
+  text-align: center;
+  color: #100E0E;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+#infoSection .container .infoBox .row .col p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #585656;
+}
+
+#infoSection .container .infoBox .row .col .cardBox {
+  position: absolute;
+  bottom: 32px;
+  right: 4px;
+  left: 4px;
+}
+
+#infoSection .container .infoBox .row .col .cardBox button {
+  padding: 17px 60px;
+  border: 1px solid #0071E4;
+  border-radius: 8px;
+  color: #0071E4;
+}
+
+#infoSection .container .infoBox .row .col .cardBox button:hover {
+  background: linear-gradient(180.04deg, #fe94a6 0.04%, #f2f2f2 65.84%);
+}
+
+#footerSection {
+  background: #F9F9F9;
+  padding: 40px 0;
+}
+
+#footerSection .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 86px;
+}
+
+#footerSection .container .row .col img {
+  width: 484px;
+  height: 371px;
+}
+
+#footerSection .container .row .col h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57px;
+  color: #100E0E;
+  margin-bottom: 8px;
+  width: 97%;
+}
+
+#footerSection .container .row .col p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #585656;
+  width: 91%;
+  margin-bottom: 25px;
+}
+
+#footerSection .container .row .col .boxSearch {
+  padding: 16px 32px 32px 40px;
+  background: linear-gradient(90.34deg, #f7355d 0.3%, #9747ff 101.33%);
+  border-radius: 16px;
+}
+
+#footerSection .container .row .col .boxSearch h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+#footerSection .container .row .col .boxSearch p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+#footerSection .container .row .col .boxSearch .inputBox input {
+  width: 246px;
+  height: 56px;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  padding-left: 24px;
+  margin-right: 16px;
+}
+
+#footerSection .container .row .col .boxSearch .inputBox input:focus-visible {
+  outline: none;
+}
+
+#footerSection .container .row .col .boxSearch .inputBox button {
+  padding: 18.5px 33.5px;
+  background: #e7e7e7;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+#footerSection .container .row .col .boxSearch .inputBox button:hover {
+  background: linear-gradient(90.34deg, #f7355d 0.3%, #9747ff 101.33%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+}
+
+footer .container .footerBox .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .container .footerBox .row .col:nth-child(1) li {
+  color: #878787;
+}
+
+footer .container .footerBox .row .col:nth-child(1) li:nth-child(1) {
+  margin-bottom: 27px;
+}
+
+footer .container .footerBox .row .col:nth-child(1) li:nth-child(2) {
+  margin-bottom: 8px;
+}
+
+footer .container .footerBox .row .col:nth-child(1) li:nth-child(3) {
+  margin-bottom: 24px;
+}
+
+footer .container .footerBox .row .col:nth-child(1) li:nth-child(4) {
+  width: 57%;
+  color: #b7b7b7;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+footer .container .footerBox .row .col:nth-child(4) {
+  margin-left: 155px;
+}
+
+footer .container .footerBox .row .col:nth-child(4) ul {
+  width: 320px;
+}
+
+footer .container .footerBox .row .col:nth-child(4) ul li:nth-child(1) a {
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+footer .container .footerBox .row .col:nth-child(4) ul li:nth-child(2) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #706e6e;
+}
+
+footer .container .footerBox .row .col:nth-child(4) ul .flexIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+footer .container .footerBox .row .col:nth-child(4) ul .flexIcon li {
+  margin-bottom: 0 !important;
+  margin-right: 24px;
+}
+
+footer .container .footerBox .row .col:nth-child(4) ul .flexIcon li a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0071E4;
+}
+
+footer .container .footerBox .row .col ul li {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+footer .container .footerBox .row .col ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #100E0E;
+}
+/*# sourceMappingURL=style.css.map */

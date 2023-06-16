@@ -1,0 +1,105 @@
+#infoSection {
+    padding: 40px 0;
+  .container {
+    h1 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      color: $colorBlack;
+      text-align: center;
+    }
+    .infoBox {
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 24px;
+        .col {
+          width: calc(20% - 7.5px);
+          height: 500px;
+          background: linear-gradient(180.04deg, #fe94a6 0.04%, #f2f2f2 65.84%);
+          border-radius: 16px;
+          padding: 24px 4px 32px 4px;
+          box-sizing: border-box !important;
+          position: relative;
+          &:nth-child(2) {
+            background: linear-gradient(180.04deg, #E685FF 0.04%, #F2F2F2 65.84%);
+            .cardBox{
+                button {
+                    &:hover {
+                        background: linear-gradient(180.04deg, #E685FF 0.04%, #F2F2F2 65.84%);
+                    }
+                }
+            }
+          }
+          &:nth-child(3) {
+            background: linear-gradient(180.04deg, #7DE9FF 0.04%, #F2F2F2 65.84%);
+            .cardBox{
+                button {
+                    &:hover {
+                        background: linear-gradient(180.04deg, #7DE9FF 0.04%, #F2F2F2 65.84%);
+                    }
+                }
+            }
+          }
+          &:nth-child(4) {
+            background: linear-gradient(180.04deg, #FFE685 0.04%, #F7F7F7 65.84%);
+            .cardBox{
+                button {
+                    &:hover {
+                       background: linear-gradient(180.04deg, #FFE685 0.04%, #F7F7F7 65.84%);
+                    }
+                }
+            }
+          }
+          &:nth-child(5) {
+            background: linear-gradient(180.04deg, #ADFFC1 0.04%, #F2F2F2 65.84%), #F2F2F2;
+            .cardBox{
+                button {
+                    &:hover {
+                       background: linear-gradient(180.04deg, #ADFFC1 0.04%, #F2F2F2 65.84%), #F2F2F2;
+                    }
+                }
+            }
+          }
+          img {
+            width: 160px;
+            height: 160px;
+            margin-left: 24px;
+          }
+          h2 {
+            font-weight: 700;
+            font-size: 23px;
+            line-height: 29px;
+            text-align: center;
+            color: $colorBlack;
+            margin-bottom: 16px;
+            margin-top: 16px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            color: #585656;
+          }
+          .cardBox {
+             position: absolute;
+             bottom: 32px;
+             right: 4px;
+             left: 4px;
+              button {
+                padding: 17px 60px;
+                border: 1px solid $colorBlue;
+                border-radius: 8px;
+                color: $colorBlue;
+                &:hover {
+                    background: linear-gradient(180.04deg, #fe94a6 0.04%, #f2f2f2 65.84%);
+                }
+              }
+          }
+        }
+      }
+    }
+  }
+}
