@@ -590,6 +590,10 @@ header .searchNav .container .searchBoxRight button span {
   border-radius: 50%;
 }
 
+header .tabCenterNav {
+  display: none;
+}
+
 header .miniNav {
   padding: 8px 0;
 }
