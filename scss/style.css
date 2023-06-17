@@ -418,7 +418,7 @@ header .topNav .container .navBoxRight a {
 }
 
 header .centerNav {
-  padding: 23px 0 31px 0;
+  padding: 23px 0;
 }
 
 header .centerNav .container {
@@ -500,7 +500,7 @@ header .centerNav .container .singleItem p {
 }
 
 header .searchNav {
-  padding: 22px 0;
+  padding: 0 0 22px 0;
 }
 
 header .searchNav .container {
