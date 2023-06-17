@@ -236,6 +236,7 @@ header {
       display: none;
     }
     .tabCenterNav {
+      display: block;
       padding: 4px 0;
       .container {
         .tabBox {
@@ -276,6 +277,7 @@ header {
               color: $colorBlack;
               margin-right: 40px;
               margin-left: 4px;
+              display: block;
             }
           }
         }

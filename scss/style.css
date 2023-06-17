@@ -691,6 +691,7 @@ header .miniNav .container .miniNavbox ul button img {
     display: none;
   }
   header .tabCenterNav {
+    display: block;
     padding: 4px 0;
   }
   header .tabCenterNav .container .tabBox {
@@ -745,6 +746,7 @@ header .miniNav .container .miniNavbox ul button img {
     color: #100E0E;
     margin-right: 40px;
     margin-left: 4px;
+    display: block;
   }
 }
 
@@ -2107,7 +2109,7 @@ header .miniNav .container .miniNavbox ul button img {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 320px) {
   #footerSection {
     background-color: #FFFFFF;
   }
