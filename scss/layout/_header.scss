@@ -1,7 +1,7 @@
 header {
   width: 100%;
-//   position: fixed;
-//   top: 0;
+  //   position: fixed;
+  //   top: 0;
 
   .topNav {
     // your mixins
@@ -193,8 +193,8 @@ header {
               text-decoration: none;
               color: $colorBlack;
             }
-        }
-        button {
+          }
+          button {
             height: 64px;
             display: flex;
             cursor: pointer;
@@ -207,17 +207,107 @@ header {
             padding: 0 16px 0 5px;
             box-sizing: border-box;
             color: $colorWhite;
-            background: linear-gradient(90deg, #000000 22.19%, #5E556B 100%);
+            background: linear-gradient(90deg, #000000 22.19%, #5e556b 100%);
             img {
-                border-radius: 16px 0 0 10px;
+              border-radius: 16px 0 0 10px;
             }
-        }
+          }
         }
       }
     }
   }
 }
 
-// @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  header {
+    .topNav {
+      display: none;
+    }
+    .centerNav {
+      display: none;
+    }
+    .searchNav {
+      display: none;
+    }
+    .miniNav {
+      display: none;
+    }
+    .tabCenterNav {
+      padding: 4px 0;
+      .container {
+        .tabBox {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .tabBoxLeft {
+            display: flex;
+            align-items: center;
+            img {
+              &:nth-child(1) {
+                width: 32px;
+                height: 32px;
+                margin-right: 32px;
+              }
+            }
+            input {
+              width: 200px;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 19px;
+              color: $colorBlack;
+              margin-left: 8px;
+              border: none;
+              &:focus-visible {
+                outline: none;
+              }
+            }
+          }
+          .tabBoxRight {
+            display: flex;
+            align-items: center;
+            a {
+              text-decoration: none;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 19px;
+              color: $colorBlack;
+              margin-right: 40px;
+              margin-left: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
-// }
+@media only screen and (max-width: 320px) {
+   header {
+    .tabCenterNav{
+      .container {
+        .tabBox {
+          align-items: center;
+          .tabBoxLeft {
+            img {
+              margin-right: 30px;
+              &:nth-child(2) {
+                margin-left: 60px;
+              }
+            }
+            input {
+              display: none;
+            }
+          }
+          .tabBoxRight{
+            img {
+              margin-left: 32px;
+            }
+            a {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+   }
+}

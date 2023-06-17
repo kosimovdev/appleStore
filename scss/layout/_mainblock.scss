@@ -5,22 +5,22 @@
   .container {
     position: relative;
     .boxOfController {
-        img {
-            position: absolute;
-            top: 50%;
-            &:nth-child(2){
-                right: 20px;
-            }
+      img {
+        position: absolute;
+        top: 50%;
+        &:nth-child(2) {
+          right: 20px;
         }
+      }
     }
     .mainBlockBox {
       padding-top: 100px;
       display: flex;
       align-items: start;
       justify-content: space-around;
-     
+
       .mainBoxLeft {
-         padding-left: 80px;
+        padding-left: 80px;
         img {
           width: 398px;
           height: 479px;
@@ -47,16 +47,78 @@
           }
         }
         button {
-            padding: 18.5px 39.5px;
-            border-radius: 8px;
-            background-color: $colorBlue;
-            color: $colorWhite;
-            border: none;
-            cursor: pointer;
-            &:hover{
-                opacity: 0.8;
-                transition: all 0.3s ease;
-            }
+          padding: 18.5px 39.5px;
+          border-radius: 8px;
+          background-color: $colorBlue;
+          color: $colorWhite;
+          border: none;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.8;
+            transition: all 0.3s ease;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #mainBlock {
+    .container {
+      .mainBlockBox {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        .mainBoxLeft {
+          text-align: center;
+          order: 2 !important;
+          padding-left: 0;
+          img {
+            width: 280px;
+            height: 202px;
+          }
+        }
+        .mainBoxRight {
+          order: -1 !important;
+          text-align: center !important;
+          margin-bottom: 31px;
+          img {
+            margin-bottom: 6px;
+          }
+          h1 {
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #mainBlock {
+    .container {
+      .mainBlockBox {
+        .mainBoxLeft {
+          img {
+            width: 173px;
+            height: 148px;
+          }
+        }
+        .mainBoxRight {
+          img {
+            width: 192px;
+            height: 45px;
+          }
+          h1 {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            color: #1e3240;
+          }
+          button {
+            padding: 10.5px 39.5px;
+          }
         }
       }
     }

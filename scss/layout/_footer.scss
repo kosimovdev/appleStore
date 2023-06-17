@@ -1,4 +1,4 @@
-footer {
+#footer {
   width: 100%;
   height: auto;
   padding: 40px 0;
@@ -57,6 +57,7 @@ footer {
                 li {
                   margin-bottom: 0 !important;
                   margin-right: 24px;
+
                   a {
                     font-weight: 500;
                     font-size: 20px;
@@ -78,6 +79,158 @@ footer {
                 color: $colorBlack;
               }
             }
+          }
+        }
+      }
+      .boxEnd {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #footer {
+    .container {
+      .footerBox {
+        .row {
+          display: block !important;
+          align-items: unset;
+          justify-content: unset;
+          .col {
+            &:nth-child(1) {
+              ul {
+                display: flex;
+                div {
+                  margin-left: 24px;
+                  li {
+                    margin-bottom: 8px !important;
+                    padding-right: 60px;
+                  }
+                }
+              }
+            }
+            &:nth-child(2) {
+              margin-top: 32px;
+              ul {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 16px;
+              }
+            }
+            &:nth-child(3) {
+              margin-top: 16px;
+              margin-bottom: 32px;
+              ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
+              }
+            }
+            &:nth-child(4) {
+              margin-left: unset;
+              ul {
+                width: 100%;
+                div {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  .flexIcon {
+                    margin-bottom: 0 !important;
+                    gap: 8px;
+                    li {
+                      &:nth-child(1) {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .boxEnd {
+          display: flex;
+          align-items: center;
+          box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.05);
+          img {
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #282626;
+            margin-right: 55px;
+          }
+          .endTitle {
+            margin-right: unset;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #footer {
+    .container {
+      .footerBox {
+        .row {
+          .col {
+            &:nth-child(2) {
+              ul {
+                display: block !important;
+                margin-bottom: 24px;
+              }
+            }
+            &:nth-child(3) {
+              ul {
+                display: block !important;
+              }
+            }
+            &:nth-child(4) {
+              ul {
+                div {
+                  display: block !important;
+                  li {
+                    margin-bottom: 4px !important;
+                    a {
+                      font-weight: 500;
+                      font-size: 24px !important;
+                      line-height: 29px;
+                    }
+                  }
+                  .flexIcon {
+                    margin-top: 16px;
+                    gap: 8px;
+                    li {
+                      a {
+                        color: $colorBlue;
+                      }
+                    }
+                    a {
+                      text-decoration: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .boxEnd {
+          display: none;
+          img {
+            width: 24px; 
+            height: 24px;
+            order: 1;
+          }
+          p {
+            order: 2;
           }
         }
       }

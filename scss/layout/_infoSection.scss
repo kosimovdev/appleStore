@@ -1,5 +1,5 @@
 #infoSection {
-    padding: 40px 0;
+  padding: 40px 0;
   .container {
     h1 {
       font-weight: 700;
@@ -23,43 +23,77 @@
           box-sizing: border-box !important;
           position: relative;
           &:nth-child(2) {
-            background: linear-gradient(180.04deg, #E685FF 0.04%, #F2F2F2 65.84%);
-            .cardBox{
-                button {
-                    &:hover {
-                        background: linear-gradient(180.04deg, #E685FF 0.04%, #F2F2F2 65.84%);
-                    }
+            background: linear-gradient(
+              180.04deg,
+              #e685ff 0.04%,
+              #f2f2f2 65.84%
+            );
+            .cardBox {
+              button {
+                &:hover {
+                  background: linear-gradient(
+                    180.04deg,
+                    #e685ff 0.04%,
+                    #f2f2f2 65.84%
+                  );
                 }
+              }
             }
           }
           &:nth-child(3) {
-            background: linear-gradient(180.04deg, #7DE9FF 0.04%, #F2F2F2 65.84%);
-            .cardBox{
-                button {
-                    &:hover {
-                        background: linear-gradient(180.04deg, #7DE9FF 0.04%, #F2F2F2 65.84%);
-                    }
+            background: linear-gradient(
+              180.04deg,
+              #7de9ff 0.04%,
+              #f2f2f2 65.84%
+            );
+            .cardBox {
+              button {
+                &:hover {
+                  background: linear-gradient(
+                    180.04deg,
+                    #7de9ff 0.04%,
+                    #f2f2f2 65.84%
+                  );
                 }
+              }
             }
           }
           &:nth-child(4) {
-            background: linear-gradient(180.04deg, #FFE685 0.04%, #F7F7F7 65.84%);
-            .cardBox{
-                button {
-                    &:hover {
-                       background: linear-gradient(180.04deg, #FFE685 0.04%, #F7F7F7 65.84%);
-                    }
+            background: linear-gradient(
+              180.04deg,
+              #ffe685 0.04%,
+              #f7f7f7 65.84%
+            );
+            .cardBox {
+              button {
+                &:hover {
+                  background: linear-gradient(
+                    180.04deg,
+                    #ffe685 0.04%,
+                    #f7f7f7 65.84%
+                  );
                 }
+              }
             }
           }
           &:nth-child(5) {
-            background: linear-gradient(180.04deg, #ADFFC1 0.04%, #F2F2F2 65.84%), #F2F2F2;
-            .cardBox{
-                button {
-                    &:hover {
-                       background: linear-gradient(180.04deg, #ADFFC1 0.04%, #F2F2F2 65.84%), #F2F2F2;
-                    }
+            background: linear-gradient(
+                180.04deg,
+                #adffc1 0.04%,
+                #f2f2f2 65.84%
+              ),
+              #f2f2f2;
+            .cardBox {
+              button {
+                &:hover {
+                  background: linear-gradient(
+                      180.04deg,
+                      #adffc1 0.04%,
+                      #f2f2f2 65.84%
+                    ),
+                    #f2f2f2;
                 }
+              }
             }
           }
           img {
@@ -84,19 +118,119 @@
             color: #585656;
           }
           .cardBox {
-             position: absolute;
-             bottom: 32px;
-             right: 4px;
-             left: 4px;
-              button {
-                padding: 17px 60px;
-                border: 1px solid $colorBlue;
-                border-radius: 8px;
-                color: $colorBlue;
-                &:hover {
-                    background: linear-gradient(180.04deg, #fe94a6 0.04%, #f2f2f2 65.84%);
-                }
+            position: absolute;
+            bottom: 32px;
+            right: 4px;
+            left: 4px;
+            button {
+              padding: 17px 60px;
+              border: 1px solid $colorBlue;
+              border-radius: 8px;
+              color: $colorBlue;
+              &:hover {
+                background: linear-gradient(
+                  180.04deg,
+                  #fe94a6 0.04%,
+                  #f2f2f2 65.84%
+                );
               }
+            }
+          }
+        }
+      }
+      .smBox {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #infoSection {
+    .container {
+      .infoBox {
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          .col {
+            width: 100%;
+            height: 158px;
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            padding: 24px;
+            background: #f9f9f9 !important;
+            margin-bottom: 8px;
+
+            img {
+              width: 64px;
+              height: 64px;
+            }
+            .infoTitle {
+              margin-left: 26px;
+              h2 {
+                margin-top: 0;
+                margin-bottom: 8px;
+                text-align: left;
+              }
+              p {
+                text-align: left;
+                padding-right: 14px;
+              }
+            }
+            .cardBox {
+              position: unset;
+              margin-top: 25px;
+            }
+          }
+        }
+        .smBox {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #infoSection {
+    .container {
+      h1 {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 16px;
+      }
+      .infoBox {
+        .row {
+          display: none;
+        }
+        .smBox {
+          width: 100%;
+          height: 129px;
+          display: block;
+          background: #f9f9f9;
+          border-radius: 16px;
+          padding: 12px;
+          margin-bottom: 12px;
+          .smFlexbox {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            img {
+              width: 32px;
+              height: 32px;
+              margin-right: 8px;
+            }
+            h1 {
+              font-size: 20px;
+              line-height: 24px;
+              margin-bottom: 0 !important;
+            }
+          }
+          p {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 19px;
           }
         }
       }
